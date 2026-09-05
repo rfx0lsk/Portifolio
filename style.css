@@ -1,0 +1,321 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    cursor: url("cursor/featherpenpointer.cur"), auto;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("img/fundo.jpg");
+    background-size: auto;
+    background-position: 0, 0;
+    background-repeat: repeat;
+}
+
+.divider0{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 110%;
+    height: 80px;
+    background-image: url("img/divider.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 80px;
+}
+
+.titulo_menu{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 28%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.titulo_menu:hover{
+    transform: translateY(-10px) scale(1.04);
+}
+
+.divider1{
+    position: absolute;
+    top: 780px;
+    left: 0;
+    width: 110%;
+    height: 80px;
+    background-image: url("img/divider.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 80px;
+}
+
+.sobre_mim_titulo{
+    position: absolute;
+    top: 900px;
+    left: 140px;
+    width: 28%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
+}
+
+.sobre_mim_titulo:hover{
+    transform: translateY(-10px) scale(1.04);
+}
+
+.sobre_mim_caixa {
+    position: absolute;
+    top: 1250px;
+    left: 123px;
+    width: 1290px;
+    height: 870px;
+    background-color: #0f0f0f;
+    border: 7px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sobre_mim_texto1 {
+    display: block;
+    width: 80%;
+    margin-left: 140px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    align-items: center;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.sobre_mim_texto1:hover{
+    transform: translateY(-10px) scale(1.04);
+}
+
+.sobre_mim_texto2 {
+    margin: 0 43px 15px 43px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.7;
+    color: white;
+}
+
+.sobre_mim_texto2:last-child {
+    margin-bottom: 0;
+}
+
+.piano{
+    position: absolute;
+    top: 276px;
+    left: 994px;
+    width: 42.5%;
+    rotate: -90deg;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.piano:hover{
+    cursor: url("cursor/Musical Cursor.cur"), auto;
+    transform: scale(1.005);
+}
+
+
+.quadrado{
+    position: absolute;
+    top: 320px;
+    left: 120px;
+    width: 38%;
+}
+
+.github{
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    width: 15%;
+    transition: 0.3s;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.github:hover{
+    transform: translateY(-8px) scale(1.005);
+}
+
+.linkedin{
+    position: absolute;
+    top: 480px;
+    left: 250px;
+    width: 17%;
+    transition: 0.3s;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.linkedin:hover{
+    transform: translateY(-8px) scale(1.00);
+}
+
+.gmail{
+    position: absolute;
+    top: 560px;
+    left: 250px;
+    width: 21%;
+    transition: 0.3s;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gmail:hover{
+    transform: translateY(-8px) scale(1.00);
+}
+
+.sobre_mim{
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    width: 23%;
+    transition: 0.3s;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.sobre_mim:hover{
+    transform: translateY(-8px) scale(1.00);
+}
+
+.arquivo{
+    position: absolute;
+    top: 300px;
+    right: 382px;
+    width: 23%;
+    transition: 0.3s;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.arquivo:hover{
+    transform: translateY(-8px) scale(1.00);
+}
+
+.competencias{
+    position: absolute;
+    top: 494px;
+    right: 347px;
+    width: 23%;
+    transition: 0.3s;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.competencias:hover{
+    transform: translateY(-8px) scale(1.00);
+}
+
+
+.fundo_menu{
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+    filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
+}
+
+.piano_gif{
+    border-radius: 100px;
+    width: 50%;
+    height: 40%;
+    position: relative;
+    left: 640px;
+    top: 900px;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.7));
+}
+
+.divider2{
+    position: absolute;
+    top: 2150px;
+    left: 0;
+    width: 110%;
+    height: 80px;
+    background-image: url("img/divider.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 80px;
+}
+
+.arquivos_titulo{
+    position:absolute;
+    top: 2270px;
+    right: 140px;
+    width: 35%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
+}
+
+.arquivos_titulo:hover{
+    transform: translateY(-10px) scale(1.04);
+}
+
+.vela_gif{
+    border-radius: 100px;
+    width: 45%;
+    height: 30%;
+    position: relative;
+    right: 650px;
+    top: 2180px;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.7));
+}
+
+<!---->
+.gostos {
+    position: absolute;
+    top: 680px;
+    left: 450px;
+}
+
+.gostos summary {
+    list-style: none;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+}
+
+.gostos summary::-webkit-details-marker {
+    display: none;
+}
+
+.mais_sobre_mim_botao {
+    width: 400px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.mais_sobre_mim_botao:hover {
+    transform: translateY(-8px);
+}
+
+.caixa_gostos {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-48.5%);
+    width: 500px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #c4d7e8;
+    color: #0f0f0f;
+    border: 6px solid #0f0f0f;
+    border-radius: 8px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
+}
+
+.divider_gostos{
+    display: block;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    padding: 0;
+}
+<!---->
