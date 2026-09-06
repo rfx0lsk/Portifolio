@@ -4,6 +4,9 @@ html{
 
 html, body{
     cursor: url("cursor/featherpenpointer.cur"), auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -125,7 +128,6 @@ body {
     transform: scale(1.005);
 }
 
-
 .quadrado{
     position: absolute;
     top: 320px;
@@ -215,7 +217,6 @@ body {
 .competencias:hover{
     transform: translateY(-8px) scale(1.00);
 }
-
 
 .fundo_menu{
     position: absolute;
@@ -319,4 +320,3 @@ body {
     margin-left: -25px;
     padding: 0;
 }
-<!---->

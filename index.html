@@ -6,50 +6,49 @@
     <link rel="stylesheet" href="style.css">
     <title>Portifólio Rafa!</title>
 </head>
-<body>
+    <body>
+        <img src="img/Título_Menu.png" class="titulo_menu">
+        <img src="img/Sobre_Mim titulo.png" class="sobre_mim_titulo" id="sobre_mim_titulo">
+        <img src="img/arquivos_titulo.png" class="arquivos_titulo">
+        <img src="img/Quadrado.png" class="quadrado">
+        <img src ="https://i.pinimg.com/originals/f9/20/1b/f9201bf831a2992b0417dfb6110b41a5.gif" class="piano_gif">
+        <img src ="https://i.pinimg.com/originals/3b/20/b4/3b20b434bf3fd5217a5f9b39b042778e.gif" class="vela_gif">
+        <div class="divider0" id="divider0"></div>
+        <div class="divider1" id="divider1"></div>
+        <div class="divider2" id="divider2"></div>
 
-    <img src="img/Título_Menu.png" class="titulo_menu">
-    <img src="img/Sobre_Mim titulo.png" class="sobre_mim_titulo" id="sobre_mim_titulo">
-    <img src="img/arquivos_titulo.png" class="arquivos_titulo">
-    <img src="img/Quadrado.png" class="quadrado">
-    <img src ="https://i.pinimg.com/originals/f9/20/1b/f9201bf831a2992b0417dfb6110b41a5.gif" class="piano_gif">
-    <img src ="https://i.pinimg.com/originals/3b/20/b4/3b20b434bf3fd5217a5f9b39b042778e.gif" class="vela_gif">
-    <div class="divider0" id="divider0"></div>
-    <div class="divider1" id="divider1"></div>
-    <div class="divider2" id="divider2"></div>
 
+        <img src="img/piano.jpg" class="piano">
+        <audio id="piano_som"src="sons/Piano Sound Effect.mp3"></audio>
+    <!---->
+        <script>
+            const piano = document.getElementById("piano_som");
+            const pianoImage = document.querySelector(".piano");
 
-    <img src="img/piano.jpg" class="piano">
-    <audio id="piano_som"src="sons/Piano Sound Effect.mp3"></audio>
-<!---->
-    <script>
-        const piano = document.getElementById("piano_som");
-        const pianoImage = document.querySelector(".piano");
+            pianoImage.addEventListener("click", function() {
+                piano.play();
+            });
+        </script>
+    <!---->
+        <div class="menu_links">
 
-        pianoImage.addEventListener("click", function() {
-            piano.play();
-        });
-    </script>
-<!---->
-    <div class="menu_links">
+            <a href="https://github.com/rfx0lsk" target="_blank">
+                <img src="img/GitHub Botão.png" class="github">  
+            </a>
 
-        <a href="https://github.com/rfx0lsk" target="_blank">
-            <img src="img/GitHub Botão.png" class="github">  
-        </a>
+            <a href="https://www.linkedin.com/in/rafaela-gaio-olesko-6315b03b9/" target="_blank">
+                <img src="img/LinkedIn Botão.png" class="linkedin">
+            </a>
 
-        <a href="https://www.linkedin.com/in/rafaela-gaio-olesko-6315b03b9/" target="_blank">
-            <img src="img/LinkedIn Botão.png" class="linkedin">
-        </a>
+                <img src="img/Gmail Botão.png" class="gmail">
 
-        <img src="img/Gmail Botão.png" class="gmail">
+        </div>
+    <!---->
+        <div class="botões">
 
-    </div>
-<!---->
-    <div class="botões">
-
-        <a href="#divider1">
-            <img src="img/Sobre_Mim Botão.png" class="sobre_mim">
-        </a>
+            <a href="#divider1">
+                <img src="img/Sobre_Mim Botão.png" class="sobre_mim">
+            </a>
 
         <a href="">
             <img src="img/Competências Botão.png" class="competencias">
