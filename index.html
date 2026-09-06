@@ -1,80 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portifólio Rafa!</title>
+    <title>Portfólio Rafa!</title>
 </head>
-    <body>
-        <img src="img/Título_Menu.png" class="titulo_menu">
-        <img src="img/Sobre_Mim titulo.png" class="sobre_mim_titulo" id="sobre_mim_titulo">
-        <img src="img/arquivos_titulo.png" class="arquivos_titulo">
-        <img src="img/Quadrado.png" class="quadrado">
-        <img src ="https://i.pinimg.com/originals/f9/20/1b/f9201bf831a2992b0417dfb6110b41a5.gif" class="piano_gif">
-        <img src ="https://i.pinimg.com/originals/3b/20/b4/3b20b434bf3fd5217a5f9b39b042778e.gif" class="vela_gif">
+<body>
+    <div class="site">
+        <img src="img/fundo_menu.png" class="fundo_menu" alt="Fundo Menu">
+        
+        <img src="img/Título_Menu.png" class="titulo_menu" alt="Título Menu">
+        <img src="img/Sobre_Mim titulo.png" class="sobre_mim_titulo" id="sobre_mim_titulo" alt="Título Sobre Mim">
+        <img src="img/arquivos_titulo.png" class="arquivos_titulo" alt="Título Arquivos">
+        <img src="img/Quadrado.png" class="quadrado" alt="Quadrado Decorativo">
+        
+        <img src="https://i.pinimg.com/originals/f9/20/1b/f9201bf831a2992b0417dfb6110b41a5.gif" class="piano_gif" alt="Piano GIF">
+        <img src="https://i.pinimg.com/originals/3b/20/b4/3b20b434bf3fd5217a5f9b39b042778e.gif" class="vela_gif" alt="Vela GIF">
+        
         <div class="divider0" id="divider0"></div>
         <div class="divider1" id="divider1"></div>
         <div class="divider2" id="divider2"></div>
 
+        <img src="img/piano.jpg" class="piano" alt="Piano">
+        <audio id="piano_som" src="sons/Piano Sound Effect.mp3"></audio>
 
-        <img src="img/piano.jpg" class="piano">
-        <audio id="piano_som"src="sons/Piano Sound Effect.mp3"></audio>
-    <!---->
-        <script>
-            const piano = document.getElementById("piano_som");
-            const pianoImage = document.querySelector(".piano");
-
-            pianoImage.addEventListener("click", function() {
-                piano.play();
-            });
-        </script>
-    <!---->
         <div class="menu_links">
-
+            
             <a href="https://github.com/rfx0lsk" target="_blank">
-                <img src="img/GitHub Botão.png" class="github">  
+                <img src="img/GitHub Botão.png" class="github" alt="GitHub">  
             </a>
 
             <a href="https://www.linkedin.com/in/rafaela-gaio-olesko-6315b03b9/" target="_blank">
-                <img src="img/LinkedIn Botão.png" class="linkedin">
+                <img src="img/LinkedIn Botão.png" class="linkedin" alt="LinkedIn">
             </a>
-
-                <img src="img/Gmail Botão.png" class="gmail">
-
+            <img src="img/Gmail Botão.png" class="gmail" alt="Gmail">
         </div>
-    <!---->
+
         <div class="botões">
 
             <a href="#divider1">
-                <img src="img/Sobre_Mim Botão.png" class="sobre_mim">
+                <img src="img/Sobre_Mim Botão.png" class="sobre_mim" alt="Sobre Mim">
             </a>
+            <a href="#">
+                <img src="img/Competências Botão.png" class="competencias" alt="Competências">
+            </a>
+            <a href="#divider2">
+                <img src="img/Arquivo Botão.png" class="arquivo" alt="Arquivo">
+            </a>
+        </div>
 
-        <a href="">
-            <img src="img/Competências Botão.png" class="competencias">
-        </a>
 
-        <a href="#divider2">
-            <img src="img/Arquivo Botão.png" class="arquivo">
-        </a>
-
-    </div>
-
-        <img src="img/fundo_menu.png" class="fundo_menu">
-<!---->
         <div class="sobre_mim_caixa">
-            <img src="img/sobre_mim texto1.png" class="sobre_mim_texto1"> <img/>
-            <p class="sobre_mim_texto2"><img src="https://i.postimg.cc/tgKSjqRc/kvz71g.gif" width="40px"> Meu nome é Rafaela, mas pode me chamar de Rafa! Atualmente, estudo Sistemas de Informação na PUCPR e, apesar de gostar bastante de programação, o que realmente me faz querer criar é a vontade de transformar ideias em algo real.</p>
-            <p class="sobre_mim_texto2"><img src="https://i.postimg.cc/tgKSjqRc/kvz71g.gif" width="40px"> A programação entrou nesse processo como uma ferramenta para colocar ainda mais ideias em prática. Gosto de misturar tecnologia com arte, design e música, experimentar diferentes estilos e descobrir novas maneiras de transformar uma ideia em uma experiência.</p>
-            <p class="sobre_mim_texto2"><img src="https://i.postimg.cc/tgKSjqRc/kvz71g.gif" width="40px"> No fim, este portfólio é um pouco disso: ideias que saíram da cabeça e ganharam forma. Não só para mostrar o que já sei fazer, mas para mostrar o que gosto de criar e até onde posso levar uma ideia quando tenho a liberdade para experimentar.</p>
+            <img src="img/sobre_mim texto1.png" class="sobre_mim_texto1" alt="Texto 1">
+            <p class="sobre_mim_texto2"><img src="https://i.postimg.cc/tgKSjqRc/kvz71g.gif" width="40px" alt="ícone"> Meu nome é Rafaela, mas pode me chamar de Rafa! Atualmente, estudo Sistemas de Informação na PUCPR e, apesar de gostar bastante de programação, o que realmente me faz querer criar é a vontade de transformar ideias em algo real.</p>
+            <p class="sobre_mim_texto2"><img src="https://i.postimg.cc/tgKSjqRc/kvz71g.gif" width="40px" alt="ícone"> A programação entrou nesse processo como uma ferramenta para colocar ainda mais ideias em prática. Gosto de misturar tecnologia com arte, design e música, experimentar diferentes estilos e descobrir novas maneiras de transformar uma ideia em uma experiência.</p>
+            <p class="sobre_mim_texto2"><img src="https://i.postimg.cc/tgKSjqRc/kvz71g.gif" width="40px" alt="ícone"> No fim, este portfólio é um pouco disso: ideias que saíram da cabeça e ganharam forma. Não só para mostrar o que já sei fazer, mas para mostrar o que gosto de criar e até onde posso levar uma ideia quando tenho a liberdade para experimentar.</p>
 
             <details class="gostos">
                 <summary>
-                    <img src="img/mais_sobre_mim botao.png" class="mais_sobre_mim_botao">
+                    <img src="img/mais_sobre_mim botao.png" class="mais_sobre_mim_botao" alt="Mais Sobre Mim">
                 </summary>
 
                 <div class="caixa_gostos">
-                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px"> Jogos, histórias e mundos</h2>
+                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px" alt="ícone"> Jogos, histórias e mundos</h2>
                     <p>
                         Tenho um carinho enorme por jogos que conseguem contar histórias marcantes, 
                         principalmente aqueles que envolvem puzzles, mistérios e a necessidade de prestar 
@@ -84,8 +73,8 @@
                         novas estratégias. Visual novels também costumam chamar minha atenção quando apresentam uma história
                         ou uma proposta interessante.
                     </p>
-                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos">
-                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px"> Animação e produções independentes</h2>
+                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos" alt="Divisor">
+                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px" alt="ícone"> Animação e produções independentes</h2>
                     <p>
                         Animes também fazem parte dos meus interesses, especialmente histórias que conseguem transmitir 
                         emoções fortes ou explorar ideias diferentes. Puella Magi Madoka Magica e O Verão em que Hikaru
@@ -94,8 +83,8 @@
                         Além disso, gosto muito de acompanhar produções independentes e projetos autorais, como Alien Stage, 
                         The Amazing Digital Circus e Eddsworld.
                     </p>
-                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos">
-                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px"> Música</h2>
+                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos" alt="Divisor">
+                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px" alt="ícone"> Música</h2>
                     <p>
                         Existe um espaço especial para música japonesa, principalmente J-Pop, mas provavelmente nada ocupa 
                         tanto espaço quanto Vocaloid.
@@ -104,8 +93,8 @@
                         mesmas ferramentas e transformá-las em músicas com estilos, histórias e identidades completamente 
                         diferentes. Entre os meus produtores favoritos estão Inabakumori, Kikuo e Iyowa.
                     </p>
-                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos">
-                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px"> Moda e estética</h2>
+                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos" alt="Divisor">
+                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px" alt="ícone"> Moda e estética</h2>
                     <p>
                         Adoro a possibilidade de me identificar com uma estética e transformar isso em uma forma de expressão. 
                         Minha favorita é, sem dúvida, o estilo ouji (inclusive, ele foi uma das principais inspirações para a 
@@ -114,8 +103,8 @@
                         acessórios e estética podem funcionar quase como uma linguagem própria, permitindo que cada pessoa 
                         construa e expresse sua identidade de uma maneira diferente.
                     </p>
-                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos">
-                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px"> Criar</h2>
+                    <img src="https://64.media.tumblr.com/5f646803732b600e10faaf91346a4266/tumblr_inline_rbrfllywFV1vefsve_500.png" class="divider_gostos" alt="Divisor">
+                    <h2><img src="https://i.postimg.cc/qvrfHGqr/9rpol9.gif" width="30px" alt="ícone"> Criar</h2>
                     <p>
                         No fim, acho que todos esses interesses têm algo em comum: a possibilidade de criar e interpretar 
                         coisas de maneiras diferentes.
@@ -130,6 +119,15 @@
             </details>
 
         </div>
+    </div>
 
+    <script>
+        const piano = document.getElementById("piano_som");
+        const pianoImage = document.querySelector(".piano");
+
+        pianoImage.addEventListener("click", function() {
+            piano.play();
+        });
+    </script>
 </body>
 </html>

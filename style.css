@@ -9,6 +9,12 @@ html, body{
     overflow-x: hidden;
 }
 
+.site {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+}
+
 body {
     margin: 0;
     min-width: 1200px;
@@ -23,8 +29,9 @@ body {
 .divider0{
     position: absolute;
     top: -20px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     height: 80px;
     background-image: url("img/divider.png");
     background-repeat: repeat-x;
@@ -47,8 +54,9 @@ body {
 .divider1{
     position: absolute;
     top: 780px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     height: 80px;
     background-image: url("img/divider.png");
     background-repeat: repeat-x;
@@ -60,6 +68,7 @@ body {
     position: absolute;
     top: 900px;
     left: 160px;
+    transform: none;
     width: 28%;
     transition: transform 0.5s ease, filter 0.5s ease;
     filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
@@ -116,21 +125,22 @@ body {
 .piano{
     position: absolute;
     top: 276px;
-    left: 994px;
-    width: 42.5%;
-    rotate: -90deg;
-    z-index: 2;
+    right: -5.5%;
+    width: 43%;
+    transform: rotate(-90deg);
+    z-index: 3;
     transition: 0.5s;
 }
 
 .piano:hover{
     cursor: url("cursor/Musical Cursor.cur"), auto;
-    transform: scale(1.005);
+    transform: rotate(-90deg) scale(1.005);
 }
+
 
 .quadrado{
     position: absolute;
-    top: 320px;
+    top: 335px;
     left: 120px;
     width: 38%;
 }
@@ -218,30 +228,34 @@ body {
     transform: translateY(-8px) scale(1.00);
 }
 
+
 .fundo_menu{
     position: absolute;
     top: 40px;
     left: 90px;
-    width: 90%;
-    height: 90%;
-    z-index: -1;
+    width: 1220px;
+    height: 700px;
+    z-index: 0;
     filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
 }
 
 .piano_gif{
-    border-radius: 100px;
-    width: 45%;
-    position: relative;
-    left: 670px;
+    position: absolute;
     top: 870px;
+    left: 50%;
+    margin-left: -50px;
+    width: 540px;
+    border-radius: 100px;
+
     filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.7));
 }
 
 .divider2{
     position: absolute;
     top: 2150px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     height: 80px;
     background-image: url("img/divider.png");
     background-repeat: repeat-x;
@@ -262,17 +276,19 @@ body {
     transform: translateY(-10px) scale(1.04);
 }
 
+
 .vela_gif{
-    border-radius: 100px;
-    width: 40%;
+    position: absolute;
+    top: 2270px;
+    left: 180px;
+    width: 450px;
     height: 200px;
-    position: relative;
-    right: 530px;
-    top: 2120px;
+    border-radius: 100px;
+
     filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.7));
 }
 
-<!---->
+
 .gostos {
     position: absolute;
     top: 680px;
@@ -292,6 +308,7 @@ body {
 .mais_sobre_mim_botao {
     width: 400px;
     display: block;
+    margin: 0 auto;
     transition: transform 0.3s ease;
 }
 
