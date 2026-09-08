@@ -428,7 +428,7 @@ body {
 #aba3:checked ~ .caixa_conteudo .conteudo3 {
     display: block;
 }
-
+<!---->
 .coletanea{
     margin: 15px 0 30px 0;
     font-size: 20px;
@@ -466,4 +466,73 @@ body {
 
 .galeria_desenhos img:hover {
     transform: scale(1.04);
+}
+<!---->
+.video_vtuber {
+    display: block;
+    width: 700px;
+    max-width: 100%;
+    margin: 25px auto;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.animacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.animação {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+<!---->
+.repositorios {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.repositorio {
+    width: 100%;
+    padding: 25px 0;
+}
+
+.repositorio h3 {
+    width: 100%;
+    margin: 0 0 35px 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+.repositorio_conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.repositorio_conteudo a {
+    flex-shrink: 0;
+}
+
+.repositorio_conteudo img {
+    width: 300px;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: url("cursor/featherpenlinkselect.cur"), auto;
+}
+
+.repositorio_conteudo img:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.repositorio_conteudo p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
 }
