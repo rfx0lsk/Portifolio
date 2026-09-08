@@ -85,6 +85,7 @@ body {
     transform: translateX(-50%);
     width: 1290px;
     height: 870px;
+    z-index: 10;
     background-color: #0f0f0f;
     border: 7px solid #ffffff;
     border-radius: 10px;
@@ -296,6 +297,7 @@ body {
     position: absolute;
     top: 680px;
     left: 50%;
+    z-index: 20;
     transform: translateX(-50%);
 }
 
@@ -326,6 +328,7 @@ body {
     transform: translateX(-48.5%);
     width: 500px;
     padding: 25px;
+    z-index: 30;
     box-sizing: border-box;
     background-color: #c4d7e8;
     color: #0f0f0f;
@@ -351,13 +354,13 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 .fundo_botoes_arquivo{
     position: absolute;
     top: -20px;
-    left: -20px;
+    left: -5.5px;
     width: 100%;
     height: 160px;
     background-color: #0f0f0f;
@@ -367,41 +370,100 @@ body {
     filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
 }
 
-.botoes_arquivo input[type="radio"] { display: none; }
+.botoes_arquivo input[type="checkbox"] {
+    display: none;
+}
 
-.botoes label img {
-    width: 400px;
+.botoes_arquivo input[type="radio"] {
+    display: none;
+}
+
+.botoes_arquivo .botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.botoes_arquivo .botoes label {
     cursor: url("cursor/featherpenlinkselect.cur"), auto;
 }
 
+.botoes_arquivo .botoes label img {
+    display: block;
+    width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.botoes_arquivo .botoes label:hover img {
+    transform: translateY(-8px);
+}
+
 .caixa_conteudo {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    background: #ffffff;
-    color:#0f0f0f;
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #c4d7e8;
+    color: #0f0f0f;
     border: 6px solid #0f0f0f;
     border-radius: 12px;
     position: relative;
-    display: block;
-    margin-top: 50px;
-    grid-template-columns: 1fr;
-    align-items: start;
+
 }
 
 .conteudo {
-  display: none;
+    display: none;
 }
-
-input[name="aba"]:not(#fechado):checked ~ .caixa_conteudo {
-  max-height: 300px;
-  opacity: 1;
-  padding: 20px;
+#aba1:checked ~ .caixa_conteudo {
+    display: block;
 }
-
-#aba1:checked ~ .caixa_conteudo .conteudo1,
-#aba2:checked ~ .caixa_conteudo .conteudo2,
+#aba1:checked ~ .caixa_conteudo .conteudo1 {
+    display: block;
+}
+#aba2:checked ~ .caixa_conteudo .conteudo2 {
+    display: block;
+}
 #aba3:checked ~ .caixa_conteudo .conteudo3 {
-  visibility: visible;
-  opacity: 1;
+    display: block;
+}
+
+.coletanea{
+    margin: 15px 0 30px 0;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.titulo_desenhos{
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.legenda{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.galeria_desenhos {
+    columns: 4;
+    column-gap: 15px;
+}
+
+.galeria_desenhos img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+.galeria_desenhos img:hover {
+    transform: scale(1.04);
 }
