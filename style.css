@@ -257,7 +257,7 @@ body {
     top: 2150px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 1000vw;
     height: 80px;
     background-image: url("img/divider.png");
     background-repeat: repeat-x;
@@ -401,30 +401,37 @@ body {
 
 .caixa_conteudo {
     display: none;
+    position: absolute;
+    top: 170px;
+    left: 0;
     width: 100%;
-    margin-top: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 20px;
     box-sizing: border-box;
     background: #c4d7e8;
     color: #0f0f0f;
     border: 6px solid #0f0f0f;
     border-radius: 12px;
-    position: relative;
-
+    z-index: 60;
 }
 
 .conteudo {
     display: none;
 }
+
 #aba1:checked ~ .caixa_conteudo {
     display: block;
 }
+
 #aba1:checked ~ .caixa_conteudo .conteudo1 {
     display: block;
 }
+
 #aba2:checked ~ .caixa_conteudo .conteudo2 {
     display: block;
 }
+
 #aba3:checked ~ .caixa_conteudo .conteudo3 {
     display: block;
 }
@@ -534,5 +541,82 @@ body {
 .repositorio_conteudo p {
     margin: 0;
     font-size: 18px;
+    line-height: 1.5;
+}
+<!---->
+
+.divider3{
+    position: absolute;
+    top: 2750px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000vw;
+    height: 80px;
+    background-image: url("img/divider.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 80px;
+}
+
+.competencias_titulo{
+    position:absolute;
+    top: 2875px;
+    left: 22.5%;
+    width: 55%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
+}
+.competencias_titulo:hover{
+    transform: translateY(-10px) scale(1.04);
+}
+
+.relogio_gif{
+    position: absolute;
+    top: 3070px;
+    left: 20%;
+    height: 200px;
+    width: 850px;
+    border-radius: 100px;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.7));
+}
+
+.caixa_competencias {
+    position: absolute;
+    top: 2100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96.5%;
+    min-height: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #0f0f0f;
+    border: 6px solid #ffffff;
+    border-radius: 12px;
+    filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.7));
+}
+
+.skills{
+    position: relative;
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-size: 60px;
+    color: #c4d7e8;
+
+}
+
+.competencias_topico {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 25px 0 10px 0;
+    font-size: 35px;
+}
+
+.competencias_conteudo {
+    position: relative;
+    z-index: 1;
+    margin: 0 30px 30px 30px;
+    text-align: center;
+    font-size: 20px;
     line-height: 1.5;
 }
